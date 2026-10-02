@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ananya & Arjun | Hindu Wedding Invitation</title>
+
+<style>
+
+/* =====================================================
+   COLOR THEME
+   Cream + Sage Green + Soft Pink + Muted Gold
+===================================================== */
+
+:root {
+    --cream: #fffaf0;
+    --cream2: #f8f1df;
+    --sage: #8fa58a;
+    --dark-sage: #405746;
+    --soft-pink: #efd2d7;
+    --pink: #d99ba8;
+    --gold: #b89b5e;
+    --gold-light: #d9c58c;
+    --white: #ffffff;
+    --text: #3e4b40;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* =====================================================
+   OPENING SCREEN
+===================================================== */
+
+#openingScreen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background:
+        radial-gradient(circle at center,
+        #fffdf5 0%,
+        #f7eedb 50%,
+        #dfe8dc 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: opacity 1.2s ease,
+                visibility 1.2s ease;
+}
+
+#openingScreen.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.opening-content {
+    padding: 30px;
+    max-width: 700px;
+}
+
+.om {
+    font-size: 70px;
+    color: var(--gold);
+    margin-bottom: 15px;
+    animation: omPulse 2s infinite;
+}
+
+@keyframes omPulse {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.opening-content h1 {
+    font-size: 48px;
+    color: var(--dark-sage);
+    margin-bottom: 12px;
+}
+
+.opening-content h2 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.opening-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.open-btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: 2px solid var(--gold);
+    border-radius: 40px;
+    background: var(--dark-sage);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.open-btn:hover {
+    background: var(--gold);
+    transform: scale(1.06);
+}
+
+/* =====================================================
+   COMMON
+===================================================== */
+
+section {
+    padding: 80px 20px;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--dark-sage);
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.gold-line {
+    width: 90px;
+    height: 3px;
+    background: var(--gold);
+    margin: 15px auto 35px;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255,250,240,0.82),
+            rgba(239,210,215,0.72)
+        ),
+        url("https://i.pinimg.com/736x/92/6b/70/926b708299a75c8796a2309abd1a6afb.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-box {
+    max-width: 900px;
+    padding: 45px;
+    background: rgba(255,255,255,0.80);
+    border: 2px solid var(--gold-light);
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 60px rgba(60,80,60,0.18);
+}
+
+.hero-small {
+    color: var(--gold);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    color: var(--dark-sage);
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: var(--pink);
+    margin: 20px 0;
+}
+
+.hero-date {
+    font-size: 22px;
+}
+
+/* =====================================================
+   COUPLE
+===================================================== */
+
+.couple-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.couple-card {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid var(--gold-light);
+    box-shadow: 0 15px 35px rgba(50,70,50,0.12);
+    transition: 0.4s;
+}
+
+.couple-card:hover {
+    transform: translateY(-8px);
+}
+
+.couple-card img {
+    width: 100%;
+    max-width: 330px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid var(--soft-pink);
+}
+
+.couple-card h3 {
+    color: var(--dark-sage);
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.couple-card p {
+    color: var(--gold);
+    margin-top: 8px;
+}
+
+/* =====================================================
+   EVENTS
+===================================================== */
+
+.events {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    text-align: center;
+    border-top: 5px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(50,70,50,0.10);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-7px);
+}
+
+.event-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    color: var(--dark-sage);
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    line-height: 1.7;
+}
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.time-box {
+    background: var(--dark-sage);
+    color: white;
+    padding: 25px 10px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.time-box span {
+    display: block;
+    font-size: 40px;
+    color: var(--gold-light);
+}
+
+.time-box small {
+    font-size: 15px;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 350px;
+    overflow: hidden;
+    border-radius: 22px;
+    border: 2px solid var(--gold);
+    background: white;
+    box-shadow: 0 12px 30px rgba(60,80,60,0.15);
+    transition: 0.4s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* =====================================================
+   BOOKING AREA
+===================================================== */
+
+.booking-container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    border: 2px solid var(--gold-light);
+    box-shadow: 0 15px 40px rgba(50,70,50,0.12);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border: 1px solid #c8d2c4;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #fffdf8;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: var(--dark-sage);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+}
+
+.card-info {
+    display: none;
+    margin-top: 25px;
+}
+
+.card-info.show {
+    display: block;
+}
+
+.info-box {
+    background: #f4f7ef;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--gold);
+}
+
+/* =====================================================
+   FOOD
+===================================================== */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.food-item {
+    background: #faf5e8;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.food-item label {
+    cursor: pointer;
+}
+
+/* =====================================================
+   TABLE BOOKING
+===================================================== */
+
+.tables {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.table-btn {
+    padding: 15px 5px;
+    border-radius: 12px;
+    background: #dfe9dc;
+    color: var(--dark-sage);
+    font-weight: bold;
+    border: 1px solid var(--sage);
+}
+
+.table-btn:hover {
+    background: var(--gold-light);
+}
+
+.table-btn.booked {
+    background: #d8d8d8;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.table-btn.selected {
+    background: var(--dark-sage);
+    color: white;
+}
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+.music-box {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    border: 2px solid var(--gold-light);
+    box-shadow: 0 15px 40px rgba(50,70,50,0.12);
+}
+
+.music-title {
+    color: var(--dark-sage);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.music-controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--dark-sage);
+    color: white;
+    font-size: 20px;
+}
+
+.music-controls button:hover {
+    background: var(--gold);
+}
+
+.progress {
+    width: 100%;
+}
+
+/* =====================================================
+   VENUE
+===================================================== */
+
+.venue-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid var(--gold-light);
+}
+
+.venue-box h3 {
+    color: var(--dark-sage);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    border-radius: 25px;
+    background: var(--dark-sage);
+    color: white;
+    text-decoration: none;
+}
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+.rsvp {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    border: 2px solid var(--gold-light);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: var(--dark-sage);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer span {
+    color: var(--gold-light);
+}
+
+/* =====================================================
+   PETALS
+===================================================== */
+
+.petal {
+    position: fixed;
+    top: -30px;
+    z-index: 5000;
+    pointer-events: none;
+    color: #e5aab5;
+    font-size: 20px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =====================================================
+   GOLD PARTICLES
+===================================================== */
+
+.particle {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:800px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero-box {
+        padding: 30px 18px;
+    }
+
+    .couple-container {
+        grid-template-columns: 1fr;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+
+    .gallery-item {
+        height: 260px;
+    }
+
+    .tables {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:480px) {
+
+    section {
+        padding: 60px 12px;
+    }
+
+    .opening-content h1 {
+        font-size: 35px;
+    }
+
+    .om {
+        font-size: 55px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 360px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tables {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .couple-card img {
+        height: 350px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     OPENING SCREEN
+===================================================== -->
+
+<div id="openingScreen">
+
+    <div class="opening-content">
+
+        <div class="om">ॐ</div>
+
+        <h1>Wedding Invitation</h1>
+
+        <h2>With Divine Blessings</h2>
+
+        <p>
+            Together with their families,
+            <br>
+            Ananya Reddy & Arjun Varma
+            <br>
+            invite you to celebrate their wedding.
+        </p>
+
+        <button class="open-btn" onclick="openInvitation()">
+            💌 Open Wedding Invitation
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-box">
+
+        <div class="hero-small">
+            शुभ विवाह • With Divine Blessings
+        </div>
+
+        <h1>Ananya & Arjun</h1>
+
+        <h2>Are Getting Married</h2>
+
+        <div class="gold-line"></div>
+
+        <p class="hero-date">
+            11 October 2026
+        </p>
+
+        <p>
+            Your presence will make our celebration more beautiful.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COUPLE
+===================================================== -->
+
+<section>
+
+    <h2 class="section-title">👰 The Bride & 🤵 The Groom</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="couple-container">
+
+        <div class="couple-card">
+
+            <img
+            src="https://i.pinimg.com/736x/92/6b/70/926b708299a75c8796a2309abd1a6afb.jpg"
+            alt="Ananya Reddy">
+
+            <h3>Ananya Reddy</h3>
+
+            <p>The Beautiful Bride</p>
+
+        </div>
+
+
+        <div class="couple-card">
+
+            <img
+            src="https://i.pinimg.com/736x/92/6b/70/926b708299a75c8796a2309abd1a6afb.jpg"
+            alt="Arjun Varma">
+
+            <h3>Arjun Varma</h3>
+
+            <p>The Handsome Groom</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVENTS
+===================================================== -->
+
+<section style="background:#f5f1e4;">
+
+    <h2 class="section-title">💍 Wedding Celebrations</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="events">
+
+        <div class="event-card">
+
+            <div class="event-icon">💍</div>
+
+            <h3>Engagement</h3>
+
+            <p>
+                10 October 2026
+                <br>
+                6:00 PM
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-icon">🌿</div>
+
+            <h3>Mehendi</h3>
+
+            <p>
+                10 October 2026
+                <br>
+                4:00 PM
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-icon">🎶</div>
+
+            <h3>Sangeet</h3>
+
+            <p>
+                10 October 2026
+                <br>
+                7:30 PM
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-icon">💒</div>
+
+            <h3>Wedding / Phere</h3>
+
+            <p>
+                11 October 2026
+                <br>
+                10:30 AM
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-icon">🌹</div>
+
+            <h3>Reception</h3>
+
+            <p>
+                11 October 2026
+                <br>
+                6:30 PM onwards
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTDOWN
+===================================================== -->
+
+<section>
+
+    <h2 class="section-title">⏳ Wedding Countdown</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="days">00</span>
+            <small>Days</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY - 7 SUPPLIED IMAGES
+===================================================== -->
+
+<section style="background:#f5f1e4;" id="gallery">
+
+    <h2 class="section-title">📸 Our Wedding Moments</h2>
+
+    <div class="gold-line"></div>
+
+    <p class="section-subtitle">
+        Beautiful memories and wedding inspiration
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1kJzjkZVhvFeY0-NHF4cG4yqHj5_1qY0vcRadd3i9SYlmcw8BB9vtGJI&s=10"
+            alt="Wedding Moment 1">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOoYv_q9b2BfgIp1sW5NNbjDFSmQptFyxnsFvSykh8g&s=10"
+            alt="Wedding Moment 2">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://image.wedmegood.com/resized-nw/700X/wp-content/uploads/2025/08/DTAN8143.jpg"
+            alt="Wedding Moment 3">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUgETjTljuYAxU_BT3FM4S8WHa5K5yKOMbv2wGKyWU9z_-aV3tR7AwKV4&s=10"
+            alt="Wedding Moment 4">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://shopzters.com/cdn/shop/articles/a_breezy_1.jpg?v=1618972694"
+            alt="Wedding Moment 5">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1TPcBx7DP3xJ87ycaolwnTXy55lW-5hSyxagcgxlqjCbSACAytIdwfzBR&s=10"
+            alt="Wedding Moment 6">
+        </div>
+
+
+        <div class="gallery-item">
+            <img
+            src="https://i.pinimg.com/736x/92/6b/70/926b708299a75c8796a2309abd1a6afb.jpg"
+            alt="Wedding Moment 7">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GUEST LOGIN + BOOKINGS
+===================================================== -->
+
+<section>
+
+    <h2 class="section-title">🎫 Guest Invitation & Booking</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="booking-container">
+
+        <h3>Enter Your Invitation Card Number</h3>
+
+        <p>
+            Example:
+            <b>WED001</b>,
+            <b>WED002</b>,
+            <b>WED003</b>
+        </p>
+
+        <input
+        type="text"
+        id="cardNumber"
+        placeholder="Enter Card Number">
+
+        <button
+        class="primary-btn"
+        onclick="loginGuest()">
+            Login
+        </button>
+
+
+        <div id="cardInfo" class="card-info">
+
+            <div class="info-box">
+
+                <h3>👨‍👩‍👧 Guest Details</h3>
+
+                <p id="guestName"></p>
+
+                <p id="guestMembers"></p>
+
+            </div>
+
+
+            <!-- ROOM -->
+
+            <h3>🏨 Room Booking</h3>
+
+            <select id="roomType">
+
+                <option value="">
+                    Select Room
+                </option>
+
+                <option value="Deluxe Room">
+                    Deluxe Room
+                </option>
+
+                <option value="Premium Room">
+                    Premium Room
+                </option>
+
+                <option value="Family Room">
+                    Family Room
+                </option>
+
+            </select>
+
+
+            <!-- FOOD -->
+
+            <h3>🍛 Food Selection</h3>
+
+            <div class="food-grid">
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Paneer Tikka">
+                        Paneer Tikka
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Veg Biryani">
+                        Veg Biryani
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Chicken Biryani">
+                        Chicken Biryani
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Butter Naan">
+                        Butter Naan
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Paneer Curry">
+                        Paneer Curry
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Traditional Sweets">
+                        Traditional Sweets
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Gulab Jamun">
+                        Gulab Jamun
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Ice Cream">
+                        Ice Cream
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Fresh Drinks">
+                        Fresh Drinks
+                    </label>
+                </div>
+
+                <div class="food-item">
+                    <label>
+                        <input type="checkbox" value="Fresh Fruits">
+                        Fresh Fruits
+                    </label>
+                </div>
+
+            </div>
+
+
+            <!-- TABLE -->
+
+            <h3 style="margin-top:30px;">
+                🪑 Table / Chair Booking
+            </h3>
+
+            <p>
+                Select one table. Chairs will be reserved
+                according to your party size.
+            </p>
+
+            <div
+            class="tables"
+            id="tablesContainer">
+            </div>
+
+
+            <button
+            class="primary-btn"
+            style="margin-top:25px;"
+            onclick="saveCompleteBooking()">
+
+                💾 Save Complete Booking
+
+            </button>
+
+
+            <div
+            id="bookingResult"
+            style="margin-top:20px;">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MUSIC PLAYER
+===================================================== -->
+
+<section style="background:#f5f1e4;">
+
+    <h2 class="section-title">🎵 Wedding Playlist</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="music-box">
+
+        <div
+        class="music-title"
+        id="songTitle">
+            Wedding Music
+        </div>
+
+        <audio
+        id="audioPlayer"
+        preload="metadata">
+        </audio>
+
+        <input
+        type="range"
+        id="progress"
+        class="progress"
+        value="0"
+        min="0"
+        max="100">
+
+        <div class="music-controls">
+
+            <button onclick="previousSong()">
+                ⏮️
+            </button>
+
+            <button onclick="togglePlay()">
+                ▶️
+            </button>
+
+            <button onclick="nextSong()">
+                ⏭️
+            </button>
+
+        </div>
+
+        <p>
+            Tap ▶️ to start the wedding music.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     VENUE
+===================================================== -->
+
+<section>
+
+    <h2 class="section-title">📍 Wedding Venue</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="venue-box">
+
+        <h3>
+            Grand Pearl Convention Hall
+        </h3>
+
+        <p>
+            Madhapur, Hyderabad,
+            Telangana, India
+        </p>
+
+        <a
+        class="map-btn"
+        href="https://www.google.com/maps/search/?api=1&query=Grand+Pearl+Convention+Hall+Madhapur+Hyderabad"
+        target="_blank">
+
+            🗺️ Open Google Maps
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RSVP
+===================================================== -->
+
+<section style="background:#f5f1e4;">
+
+    <h2 class="section-title">💌 RSVP</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="rsvp">
+
+        <input
+        type="text"
+        id="rsvpName"
+        placeholder="Your Name">
+
+        <input
+        type="text"
+        id="rsvpCard"
+        placeholder="Invitation Card Number">
+
+        <select id="rsvpStatus">
+
+            <option value="">
+                Select Response
+            </option>
+
+            <option value="Attending">
+                Yes, I will attend
+            </option>
+
+            <option value="Not Attending">
+                Sorry, I cannot attend
+            </option>
+
+        </select>
+
+        <button
+        class="primary-btn"
+        onclick="submitRSVP()">
+
+            💌 Submit RSVP
+
+        </button>
+
+        <div
+        id="rsvpResult"
+        style="margin-top:20px;">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h2>
+        Ananya ❤️ Arjun
+    </h2>
+
+    <p style="margin-top:12px;">
+        With love, blessings and happiness
+    </p>
+
+    <p style="margin-top:15px;">
+        <span>11 October 2026</span>
+    </p>
+
+    <p style="margin-top:20px;">
+        शुभ विवाह 🕉️
+    </p>
+
+</footer>
+
+
+<script>
+
+/* =====================================================
+   OPEN INVITATION
+===================================================== */
+
+function openInvitation() {
+
+    document
+    .getElementById("openingScreen")
+    .classList.add("hide");
+
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+const weddingDate =
+new Date("October 11, 2026 10:30:00").getTime();
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+
+    const distance = weddingDate - now;
+
+    if(distance <= 0) {
+
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+    }
+
+    const days =
+    Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours =
+    Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+    const minutes =
+    Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+    const seconds =
+    Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+    );
+
+    document.getElementById("days").innerText =
+    String(days).padStart(2,"0");
+
+    document.getElementById("hours").innerText =
+    String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").innerText =
+    String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").innerText =
+    String(seconds).padStart(2,"0");
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+
+/* =====================================================
+   GUEST DATA
+===================================================== */
+
+const guests = {
+
+    WED001: {
+        name: "Ananya Family",
+        members: 4
+    },
+
+    WED002: {
+        name: "Arjun Family",
+        members: 3
+    },
+
+    WED003: {
+        name: "Reddy Family",
+        members: 2
+    },
+
+    WED004: {
+        name: "Varma Family",
+        members: 5
+    },
+
+    WED005: {
+        name: "Special Guest Family",
+        members: 2
+    }
+
+};
+
+
+let currentGuest = null;
+let selectedTable = null;
+
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+function createTables() {
+
+    const container =
+    document.getElementById("tablesContainer");
+
+    container.innerHTML = "";
+
+    const bookings =
+    JSON.parse(
+        localStorage.getItem("tableBookings") || "{}"
+    );
+
+    for(let i=1; i<=20; i++) {
+
+        const button =
+        document.createElement("button");
+
+        button.className = "table-btn";
+
+        button.innerText =
+        "Table " + i;
+
+        if(
+            bookings[i] &&
+            bookings[i].card !== currentGuest
+        ) {
+
+            button.classList.add("booked");
+
+            button.disabled = true;
+
+        }
+
+        if(
+            bookings[i] &&
+            bookings[i].card === currentGuest
+        ) {
+
+            button.classList.add("selected");
+
+            selectedTable = i;
+
+        }
+
+        button.onclick = function() {
+
+            selectTable(i);
+
+        };
+
+        container.appendChild(button);
+
+    }
+
+}
+
+
+/* =====================================================
+   LOGIN GUEST
+===================================================== */
+
+function loginGuest() {
+
+    const card =
+    document
+    .getElementById("cardNumber")
+    .value
+    .trim()
+    .toUpperCase();
+
+    if(!guests[card]) {
+
+        alert(
+            "Invalid card number.\nTry WED001 to WED005."
+        );
+
+        return;
+    }
+
+    currentGuest = card;
+
+    const guest = guests[card];
+
+    document
+    .getElementById("guestName")
+    .innerText =
+    "Name: " + guest.name;
+
+    document
+    .getElementById("guestMembers")
+    .innerText =
+    "Party Size: " + guest.members;
+
+    document
+    .getElementById("cardInfo")
+    .classList.add("show");
+
+    selectedTable = null;
+
+    createTables();
+
+}
+
+
+/* =====================================================
+   SELECT TABLE
+===================================================== */
+
+function selectTable(tableNumber) {
+
+    if(!currentGuest) {
+
+        alert("Please login using your invitation card.");
+
+        return;
+    }
+
+    const bookings =
+    JSON.parse(
+        localStorage.getItem("tableBookings") || "{}"
+    );
+
+    if(
+        bookings[tableNumber] &&
+        bookings[tableNumber].card !== currentGuest
+    ) {
+
+        alert("This table is already booked.");
+
+        return;
+    }
+
+    selectedTable = tableNumber;
+
+    createTables();
+
+}
+
+
+/* =====================================================
+   SAVE COMPLETE BOOKING
+===================================================== */
+
+function saveCompleteBooking() {
+
+    if(!currentGuest) {
+
+        alert("Please login first.");
+
+        return;
+    }
+
+    if(!selectedTable) {
+
+        alert("Please select a table.");
+
+        return;
+    }
+
+    const room =
+    document
+    .getElementById("roomType")
+    .value;
+
+    if(!room) {
+
+        alert("Please select a room.");
+
+        return;
+    }
+
+
+    const food = [];
+
+    document
+    .querySelectorAll(
+        '.food-item input[type="checkbox"]:checked'
+    )
+    .forEach(function(item) {
+
+        food.push(item.value);
+
+    });
+
+
+    if(food.length === 0) {
+
+        alert("Please select at least one food item.");
+
+        return;
+    }
+
+
+    const guest =
+    guests[currentGuest];
+
+
+    /* ROOM */
+
+    const roomBookings =
+    JSON.parse(
+        localStorage.getItem("roomBookings") || "{}"
+    );
+
+    roomBookings[currentGuest] = {
+        guest: guest.name,
+        room: room,
+        members: guest.members
+    };
+
+    localStorage.setItem(
+        "roomBookings",
+        JSON.stringify(roomBookings)
+    );
+
+
+    /* FOOD */
+
+    const foodBookings =
+    JSON.parse(
+        localStorage.getItem("foodBookings") || "{}"
+    );
+
+    foodBookings[currentGuest] = {
+        guest: guest.name,
+        food: food
+    };
+
+    localStorage.setItem(
+        "foodBookings",
+        JSON.stringify(foodBookings)
+    );
+
+
+    /* TABLE */
+
+    const tableBookings =
+    JSON.parse(
+        localStorage.getItem("tableBookings") || "{}"
+    );
+
+    tableBookings[selectedTable] = {
+
+        card: currentGuest,
+
+        guest: guest.name,
+
+        members: guest.members,
+
+        chairs: guest.members
+
+    };
+
+    localStorage.setItem(
+        "tableBookings",
+        JSON.stringify(tableBookings)
+    );
+
+
+    /* COMPLETE BOOKING */
+
+    const completeBookings =
+    JSON.parse(
+        localStorage.getItem("completeBookings") || "{}"
+    );
+
+    completeBookings[currentGuest] = {
+
+        guest: guest.name,
+
+        members: guest.members,
+
+        room: room,
+
+        food: food,
+
+        table: selectedTable,
+
+        chairs: guest.members
+
+    };
+
+    localStorage.setItem(
+        "completeBookings",
+        JSON.stringify(completeBookings)
+    );
+
+
+    document
+    .getElementById("bookingResult")
+    .innerHTML = `
+
+        <div class="info-box">
+
+            <h3>✅ Booking Confirmed!</h3>
+
+            <p>
+                <b>Guest:</b>
+                ${guest.name}
+            </p>
+
+            <p>
+                <b>Room:</b>
+                ${room}
+            </p>
+
+            <p>
+                <b>Table:</b>
+                ${selectedTable}
+            </p>
+
+            <p>
+                <b>Chairs:</b>
+                ${guest.members}
+            </p>
+
+            <p>
+                <b>Food:</b>
+                ${food.join(", ")}
+            </p>
+
+        </div>
+
+    `;
+
+    createTables();
+
+}
+
+
+/* =====================================================
+   MUSIC PLAYER
+===================================================== */
+
+const songs = [
+
+    {
+        title: "Murari Wedding Song",
+        file: "murari-wedding.mp3"
+    },
+
+    {
+        title: "Wedding Celebration",
+        file: "song2.mp3"
+    },
+
+    {
+        title: "Beautiful Beginnings",
+        file: "song3.mp3"
+    }
+
+];
+
+
+let currentSong = 0;
+
+const audio =
+document.getElementById("audioPlayer");
+
+const songTitle =
+document.getElementById("songTitle");
+
+const progress =
+document.getElementById("progress");
+
+
+function loadSong(index) {
+
+    currentSong = index;
+
+    audio.src =
+    songs[currentSong].file;
+
+    songTitle.innerText =
+    songs[currentSong].title;
+
+}
+
+loadSong(0);
+
+
+function togglePlay() {
+
+    if(audio.paused) {
+
+        audio.play()
+        .catch(function() {
+
+            alert(
+                "Please make sure the audio file exists in the same folder."
+            );
+
+        });
+
+    } else {
+
+        audio.pause();
+
+    }
+
+}
+
+
+function nextSong() {
+
+    currentSong++;
+
+    if(currentSong >= songs.length) {
+
+        currentSong = 0;
+
+    }
+
+    loadSong(currentSong);
+
+    audio.play().catch(function(){});
+
+}
+
+
+function previousSong() {
+
+    currentSong--;
+
+    if(currentSong < 0) {
+
+        currentSong =
+        songs.length - 1;
+
+    }
+
+    loadSong(currentSong);
+
+    audio.play().catch(function(){});
+
+}
+
+
+audio.addEventListener(
+    "ended",
+    nextSong
+);
+
+
+audio.addEventListener(
+    "timeupdate",
+    function() {
+
+        if(audio.duration) {
+
+            progress.value =
+            (audio.currentTime /
+            audio.duration) * 100;
+
+        }
+
+    }
+);
+
+
+progress.addEventListener(
+    "input",
+    function() {
+
+        if(audio.duration) {
+
+            audio.currentTime =
+            (progress.value / 100)
+            * audio.duration;
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+function submitRSVP() {
+
+    const name =
+    document.getElementById("rsvpName").value.trim();
+
+    const card =
+    document.getElementById("rsvpCard").value.trim();
+
+    const status =
+    document.getElementById("rsvpStatus").value;
+
+
+    if(!name || !card || !status) {
+
+        alert("Please fill all RSVP details.");
+
+        return;
+    }
+
+
+    const rsvpData =
+    JSON.parse(
+        localStorage.getItem("weddingRSVP") || "[]"
+    );
+
+
+    rsvpData.push({
+
+        name: name,
+
+        card: card,
+
+        status: status,
+
+        time: new Date().toLocaleString()
+
+    });
+
+
+    localStorage.setItem(
+        "weddingRSVP",
+        JSON.stringify(rsvpData)
+    );
+
+
+    document
+    .getElementById("rsvpResult")
+    .innerHTML = `
+
+        <div class="info-box">
+
+            <h3>💌 RSVP Saved</h3>
+
+            <p>
+                Thank you, ${name}!
+            </p>
+
+            <p>
+                Your response:
+                <b>${status}</b>
+            </p>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   FALLING PETALS
+===================================================== */
+
+function createPetal() {
+
+    const petal =
+    document.createElement("div");
+
+    petal.className = "petal";
+
+    petal.innerHTML = "🌸";
+
+    petal.style.left =
+    Math.random() * 100 + "vw";
+
+    petal.style.animationDuration =
+    (5 + Math.random() * 5) + "s";
+
+    petal.style.fontSize =
+    (12 + Math.random() * 15) + "px";
+
+    document.body.appendChild(petal);
+
+
+    setTimeout(function() {
+
+        petal.remove();
+
+    },10000);
+
+}
+
+setInterval(createPetal,700);
+
+
+/* =====================================================
+   GOLD PARTICLES
+===================================================== */
+
+function createParticle() {
+
+    const particle =
+    document.createElement("div");
+
+    particle.className = "particle";
+
+    particle.style.left =
+    Math.random() * 100 + "vw";
+
+    particle.style.top =
+    Math.random() * 100 + "vh";
+
+    document.body.appendChild(particle);
+
+
+    setTimeout(function() {
+
+        particle.remove();
+
+    },5000);
+
+}
+
+setInterval(createParticle,600);
+
+</script>
+
+</body>
+</html>
